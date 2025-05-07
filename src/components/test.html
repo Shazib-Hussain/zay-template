@@ -1,0 +1,56 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real DOM Test</title>
+</head>
+<body>
+  <div id="realDomTest"></div>
+
+  <script>
+    const realDomDiv = document.getElementById('realDomTest');
+
+    console.time('Real DOM Update Time');
+
+    for (let i = 0; i < 10000; i++) {
+      const newElement = document.createElement('p');
+      newElement.textContent = `Paragraph ${i}`;
+      realDomDiv.appendChild(newElement);
+    }
+
+    console.timeEnd('Real DOM Update Time');
+  </script>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Virtual DOM Test</title>
+</head>
+
+<body>
+  <script>
+    console.time('Virtual DOM (Memory) Update Time');
+
+    const virtualDomArray = [];
+
+    for (let i = 0; i < 10000; i++) {
+      const virtualElement = {
+        type: 'p',
+        content: `Paragraph ${i}`
+      };
+      virtualDomArray.push(virtualElement);
+    }
+
+    console.timeEnd('Virtual DOM (Memory) Update Time');
+  </script>
+</body>
+
+</html>
