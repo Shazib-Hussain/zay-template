@@ -39,25 +39,25 @@ function Navbar() {
 
                     <List sx={{ display: { xs: 'none', md: 'flex' }, fontSize: 'large', gap: '30px' }}>
                         <ListItem >
-                            <Link to={"/"} style={{textDecoration:'none'}}>
+                            <Link to={"/"} style={{textDecoration:'none', color: 'black'}}>
                                 Home
                             </Link>
                         </ListItem>
 
                         <ListItem >
-                            <Link to={"/About_page"} style={{textDecoration:'none'}}>
+                            <Link to={"/About_page"} style={{textDecoration:'none', color: 'black'}}>
                                 About
                             </Link>
                         </ListItem>
 
                         <ListItem>
-                            <Link to={'/Shop_page'} style={{textDecoration:'none'}}>
+                            <Link to={'/Shop_page'} style={{textDecoration:'none', color: 'black'}}>
                                 Shop
                             </Link>
                         </ListItem>
 
                         <ListItem>
-                            <Link to={'/Contact_page'} style={{textDecoration:'none'}}>
+                            <Link to={'/Contact_page'} style={{textDecoration:'none', color: 'black'}}>
                                 Contact
                             </Link>
                         </ListItem>

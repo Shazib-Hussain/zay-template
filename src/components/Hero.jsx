@@ -54,7 +54,7 @@ function Hero() {
 
                     <Typography variant='h4' sx={{
                     }}>
-                        Tiny and Perfect eCommerce template
+                        Tiny and Perfect eCommerce Template
                     </Typography>
 
                     <Typography sx={{
